@@ -8,7 +8,7 @@ const Friends = () => {
     return (
         <div >
             <h3 className="mb-6">This is my friends page:{friends.length}</h3>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-5'>
+            <div className='grid  md:grid-cols-2 lg:grid-cols-3 gap-6 px-5'>
                 {
                     friends.map(friend => <Friend
                         key={friend.id}
