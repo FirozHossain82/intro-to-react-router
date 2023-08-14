@@ -6,8 +6,9 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h3>This is home components </h3>
+            <div className='text-center text-lg my-8'>
             <Outlet></Outlet>
+            </div>
         </div>
     );
 };

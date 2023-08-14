@@ -1,12 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-    </div>
+    <nav className="text-center py-6 bg-lime-100 font-medium text-lg  ">
+      <Link className="mr-12 hover:text-purple-900" to="/">
+        Home
+      </Link>
+      <Link className="mr-12 hover:text-purple-900" to="/friends">
+        Friends
+      </Link>
+      <Link className="mr-12 hover:text-purple-900" to="/about">About</Link>
+      <Link className="mr-12 hover:text-purple-900" to="/contact">Contact</Link>
+    </nav>
   );
 };
 
