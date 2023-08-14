@@ -1,5 +1,5 @@
 import React from "react";
-import './ActiveLInk.css'
+import './ActiveLInk.css';
 import { NavLink } from "react-router-dom";
 const ActiveLInk = ({to, children}) => {
   return (
