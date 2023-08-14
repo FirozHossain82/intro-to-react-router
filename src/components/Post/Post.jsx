@@ -17,7 +17,6 @@ const Post = ({ post }) => {
           <Link to={`/post/${id}`}> Details</Link>
         </button>
         <Link to={`/post/${id}`}>
-          {" "}
           <button className="bg-green-200 border-2 border-blue-200 m-2 p-2 rounded-md  font-bold ">
             Show Post Details
           </button>

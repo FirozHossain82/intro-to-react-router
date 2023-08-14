@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ActiveLInk from "../ActiveLInk/ActiveLInk.jsx";
 
 const Header = () => {
   return (
@@ -7,14 +8,21 @@ const Header = () => {
       <Link className="mr-12 hover:text-purple-900" to="/">
         Home
       </Link>
-      <Link className="mr-12 hover:text-purple-900" to="/friends">
-        Friends
-      </Link>
+      <ActiveLInk>
+        {" "}
+        <Link className="mr-12 hover:text-purple-900" to="/friends">
+          Friends
+        </Link>
+      </ActiveLInk>
       <Link className="mr-12 hover:text-purple-900" to="/posts">
         Posts
       </Link>
-      <Link className="mr-12 hover:text-purple-900" to="/about">About</Link>
-      <Link className="mr-12 hover:text-purple-900" to="/contact">Contact</Link>
+      <Link className="mr-12 hover:text-purple-900" to="/about">
+        About
+      </Link>
+      <Link className="mr-12 hover:text-purple-900" to="/contact">
+        Contact
+      </Link>
     </nav>
   );
 };
